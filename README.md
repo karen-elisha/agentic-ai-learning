@@ -15,9 +15,6 @@ This repository documents my journey of learning Agentic AI, LLMs, AI Agents, RA
 | Day | Topic | Status |
 |------|--------|---------|
 | Day 1 | Python Review | ✅ |
-| Day 2 | LLM Basics | ✅ |
-| Day 3 | Ollama Setup | ✅ |
-| Day 4 | LangChain Intro | ⏳ |
 
 ---
 
@@ -45,7 +42,7 @@ Every day contains:
 
 ---
 
-## Projects
+## Projects I aim to complete: 
 
 ### 1. AI Chatbot
 Building a chatbot using LLMs.
@@ -72,8 +69,3 @@ Tracking contributions to:
 
 ---
 
-## Target
-
-- 350+ GitHub Contributions
-- 20+ AI Projects
-- Regular Open Source Contributions
