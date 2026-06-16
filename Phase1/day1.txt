@@ -1,0 +1,600 @@
+PYTHON DATA TYPES – COMPLETE REVISION NOTES
+
+==================================================
+
+1. INTEGER (int)
+    ==================================================
+
+Definition:
+Integer is a data type used to store whole numbers without decimal points.
+
+Examples:
+
+x = 10
+y = -5
+z = 1000
+
+Characteristics:
+• Stores positive and negative whole numbers
+• Unlimited size in Python
+• Immutable (cannot be modified after creation)
+
+Common Operations:
+
+a = 10
+b = 3
+
+a + b    # Addition → 13
+a - b    # Subtraction → 7
+a * b    # Multiplication → 30
+a / b    # Division → 3.333…
+a // b   # Floor Division → 3
+a % b    # Modulus → 1
+a ** b   # Exponentiation → 1000
+
+Useful Functions:
+
+abs(-10)      # 10
+pow(2, 3)     # 8
+max(1,2,3)    # 3
+min(1,2,3)    # 1
+
+Type Checking:
+
+type(10)
+
+Output:
+<class ‘int’>
+
+==================================================
+2. FLOAT (float)
+
+Definition:
+Float is used to store decimal or floating-point numbers.
+
+Examples:
+
+price = 99.99
+pi = 3.14159
+temperature = -12.5
+
+Characteristics:
+• Stores numbers with decimal points
+• Supports scientific notation
+• Immutable
+
+Examples:
+
+x = 10.5
+y = 2.5
+
+print(x + y)
+print(x - y)
+print(x * y)
+print(x / y)
+
+Scientific Notation:
+
+a = 1e3      # 1000.0
+b = 2.5e2    # 250.0
+
+Type Conversion:
+
+float(5)      # 5.0
+float(“10”)   # 10.0
+
+Type Checking:
+
+type(3.14)
+
+Output:
+<class ‘float’>
+
+==================================================
+3. STRING (str)
+
+Definition:
+String is a sequence of characters used to store text.
+
+Examples:
+
+name = “Python”
+city = ‘Bangalore’
+
+Characteristics:
+• Ordered
+• Immutable
+• Supports indexing and slicing
+
+Creating Strings:
+
+s1 = “Hello”
+s2 = ‘World’
+s3 = “”“Multi-line String”””
+
+Indexing:
+
+text = “Python”
+
+text[0]  # P
+text[1]  # y
+text[-1] # n
+
+Slicing:
+
+text[0:3]  # Pyt
+text[2:]   # thon
+text[:4]   # Pyth
+
+String Concatenation:
+
+first = “Hello”
+second = “World”
+
+result = first + “ “ + second
+
+Output:
+Hello World
+
+Repetition:
+
+“Hi” * 3
+
+Output:
+HiHiHi
+
+Common String Methods:
+
+text = “hello world”
+
+text.upper()
+text.lower()
+text.title()
+text.capitalize()
+text.strip()
+text.replace(“world”,“Python”)
+text.split()
+text.find(“world”)
+
+Length:
+
+len(text)
+
+Membership:
+
+“hello” in text
+
+Formatting:
+
+name = “John”
+age = 20
+
+print(f”My name is {name} and I am {age}”)
+
+==================================================
+4. BOOLEAN (bool)
+
+Definition:
+Boolean represents logical values True or False.
+
+Examples:
+
+is_student = True
+is_admin = False
+
+Characteristics:
+• Used in decision making
+• Result of comparisons
+
+Examples:
+
+5 > 3     # True
+5 < 3     # False
+5 == 5    # True
+5 != 3    # True
+
+Logical Operators:
+
+True and False
+True or False
+not True
+
+Truthy Values:
+
+True
+1
+“Hello”
+[1,2]
+
+Falsy Values:
+
+False
+0
+None
+“”
+[]
+{}
+
+Type Checking:
+
+type(True)
+
+Output:
+<class ‘bool’>
+
+==================================================
+5. LIST (list)
+
+Definition:
+List is an ordered and mutable collection of items.
+
+Examples:
+
+fruits = [“apple”, “banana”, “orange”]
+
+Characteristics:
+• Ordered
+• Mutable
+• Allows duplicates
+• Supports mixed data types
+
+Creating Lists:
+
+numbers = [1,2,3,4]
+mixed = [1,“Hello”,3.5,True]
+
+Accessing Elements:
+
+fruits[0]
+fruits[1]
+fruits[-1]
+
+Slicing:
+
+fruits[0:2]
+
+Modifying Elements:
+
+fruits[1] = “mango”
+
+Adding Elements:
+
+fruits.append(“grapes”)
+fruits.insert(1,“kiwi”)
+
+Extending Lists:
+
+a = [1,2]
+a.extend([3,4])
+
+Removing Elements:
+
+fruits.remove(“apple”)
+fruits.pop()
+fruits.pop(1)
+del fruits[0]
+
+Sorting:
+
+nums = [4,1,3,2]
+
+nums.sort()
+nums.reverse()
+
+List Methods:
+
+append()
+insert()
+extend()
+remove()
+pop()
+clear()
+sort()
+reverse()
+count()
+index()
+
+Looping:
+
+for item in fruits:
+print(item)
+
+List Comprehension:
+
+squares = [x*x for x in range(5)]
+
+Output:
+[0,1,4,9,16]
+
+==================================================
+6. TUPLE (tuple)
+
+Definition:
+Tuple is an ordered and immutable collection.
+
+Examples:
+
+colors = (“red”,“green”,“blue”)
+
+Characteristics:
+• Ordered
+• Immutable
+• Allows duplicates
+• Faster than lists
+
+Accessing Elements:
+
+colors[0]
+colors[1]
+
+Tuple Methods:
+
+numbers = (1,2,2,3)
+
+numbers.count(2)
+numbers.index(3)
+
+Single Element Tuple:
+
+t = (5,)
+
+Without comma:
+
+t = (5)
+
+This becomes an integer.
+
+Tuple Packing:
+
+person = (“John”,20,“India”)
+
+Tuple Unpacking:
+
+name, age, country = person
+
+==================================================
+7. DICTIONARY (dict)
+
+Definition:
+Dictionary stores data in key-value pairs.
+
+Examples:
+
+student = {
+“name”: “John”,
+“age”: 20,
+“city”: “Bangalore”
+}
+
+Characteristics:
+• Mutable
+• Fast lookup
+• Keys must be unique
+• Ordered (Python 3.7+)
+
+Accessing Values:
+
+student[“name”]
+student[“age”]
+
+Using get():
+
+student.get(“name”)
+
+Adding Data:
+
+student[“course”] = “Python”
+
+Updating Data:
+
+student[“age”] = 21
+
+Removing Data:
+
+del student[“city”]
+
+student.pop(“age”)
+
+Dictionary Methods:
+
+keys()
+values()
+items()
+get()
+pop()
+update()
+clear()
+
+Looping:
+
+for key in student:
+print(key)
+
+for key, value in student.items():
+print(key, value)
+
+Nested Dictionary:
+
+students = {
+“s1”: {“name”:“John”,“age”:20},
+“s2”: {“name”:“Jane”,“age”:21}
+}
+
+==================================================
+8. SET (set)
+
+Definition:
+Set is an unordered collection of unique elements.
+
+Examples:
+
+numbers = {1,2,3,4}
+
+Characteristics:
+• Unordered
+• Mutable
+• No duplicates
+• Fast searching
+
+Creating Sets:
+
+s = {1,2,3}
+empty_set = set()
+
+Duplicate Removal:
+
+nums = {1,2,2,3,3}
+
+Output:
+{1,2,3}
+
+Adding Elements:
+
+s.add(5)
+
+Removing Elements:
+
+s.remove(2)
+s.discard(3)
+
+Set Operations:
+
+A = {1,2,3}
+B = {3,4,5}
+
+Union:
+
+A | B
+
+Output:
+{1,2,3,4,5}
+
+Intersection:
+
+A & B
+
+Output:
+{3}
+
+Difference:
+
+A - B
+
+Output:
+{1,2}
+
+Symmetric Difference:
+
+A ^ B
+
+Output:
+{1,2,4,5}
+
+Membership:
+
+3 in A
+
+Output:
+True
+
+==================================================
+TYPE CONVERSION
+
+int(“10”)        → 10
+float(“10.5”)    → 10.5
+str(100)         → “100”
+list(“abc”)      → [‘a’,‘b’,‘c’]
+tuple([1,2,3])  → (1,2,3)
+set([1,1,2,3])  → {1,2,3}
+
+==================================================
+COMPARISON TABLE
+
+Type     Ordered  Mutable  Duplicates
+
+int       N/A      No        N/A
+float     N/A      No        N/A
+str       Yes      No        Yes
+list      Yes      Yes       Yes
+tuple     Yes      No        Yes
+dict      Yes      Yes       Keys Unique
+set       No       Yes       No
+bool      N/A      No        N/A
+
+==================================================
+INTERVIEW QUESTIONS
+
+1. Difference between List and Tuple?
+
+List:
+• Mutable
+• Uses []
+• Slower
+
+Tuple:
+• Immutable
+• Uses ()
+• Faster
+
+2. Difference between Set and List?
+
+List:
+• Ordered
+• Duplicates allowed
+
+Set:
+• Unordered
+• No duplicates
+
+3. Difference between Dictionary and List?
+
+Dictionary:
+• Key-value storage
+• Fast lookup
+
+List:
+• Index-based storage
+
+4. Is String Mutable?
+
+No. Strings are immutable.
+
+5. Is Tuple Mutable?
+
+No. Tuples are immutable.
+
+6. Can Dictionary Keys Be Duplicated?
+
+No. Keys must be unique.
+
+7. Can Set Store Duplicates?
+
+No.
+
+==================================================
+QUICK REVISION
+
+int     → Whole numbers
+float   → Decimal numbers
+str     → Text data
+bool    → True / False
+list    → Ordered, Mutable Collection
+tuple   → Ordered, Immutable Collection
+dict    → Key-Value Pairs
+set     → Unique Elements Only
+
+Most Important Methods:
+
+String:
+upper(), lower(), replace(), split(), strip()
+
+List:
+append(), insert(), remove(), pop(), sort()
+
+Dictionary:
+get(), keys(), values(), items(), update()
+
+Set:
+add(), remove(), union(), intersection()
+
+These 8 data types form the foundation of Python programming and are heavily used in interviews, coding tests, automation scripts, data science, web development, and software engineering.
