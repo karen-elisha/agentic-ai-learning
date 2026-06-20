@@ -17,7 +17,7 @@ z = 1000
 Characteristics:
 • Stores positive and negative whole numbers
 • Unlimited size in Python
-• Immutable (cannot be modified after creation)
+• Immutable (cannot be changed after creation)
 
 Common Operations:
 
@@ -534,7 +534,7 @@ List:
 Tuple:
 • Immutable
 • Uses ()
-• Faster
+• Fastera
 
 2. Difference between Set and List?
 
