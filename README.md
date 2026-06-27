@@ -6,7 +6,7 @@
 
 ## 🎯 Mission
 
-Learn Agentic AI from the ground up — LLMs, AI Agents, RAG pipelines, multi-agent systems, vector databases, and open-source tools — while building real projects and contributing to the OSS ecosystem every single day.
+Learn Agentic AI from the ground up — LLMs, AI Agents, RAG pipelines, multi-agent systems, vector databases, and open-source tools  while building real projects and contributing to the OSS ecosystem every single day.
 
 ---
 
