@@ -22,20 +22,20 @@ Characteristics:
 Common Operations:
 
 a = 10
-b = 3
+b = 5
 
-a + b    # Addition → 13
-a - b    # Subtraction → 7
-a * b    # Multiplication → 30
-a / b    # Division → 3.333…
-a // b   # Floor Division → 3
-a % b    # Modulus → 1
-a ** b   # Exponentiation → 1000
+a + b    # Addition → 15
+a - b    # Subtraction → 5
+a * b    # Multiplication → 50
+a / b    # Division → 2.0
+a // b   # Floor Division → 2
+a % b    # Modulus → 0
+a ** b   # Exponentiation → 100000
 
 Useful Functions:
 
 abs(-10)      # 10
-pow(2, 3)     # 8
+pow(2, 5)     # 32
 max(1,2,3)    # 3
 min(1,2,3)    # 1
 
